@@ -35,6 +35,7 @@ public class ExpandingTree implements Runnable {
 
                 String parentNode = childAdded.get(random.nextInt(childAdded.size()));
                 tree.addChild(parentNode, childNode);
+                childAdded.add(childNode);
                 System.out.println("Adding to " + parentNode + ", chile node:" + childNode);
             }
 

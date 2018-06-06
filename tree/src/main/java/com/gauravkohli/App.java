@@ -32,6 +32,11 @@ public class App {
             treeSize.setStopRunning(true);
         }
 
+        System.out.println("Printing the current tree");
+        System.out.println(simpleTree);
+
+        System.out.println("Final size of the tree is: " + simpleTree.size());
+
         executorService.shutdown();
         executorService.awaitTermination(1000, TimeUnit.MILLISECONDS);
     }
